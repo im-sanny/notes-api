@@ -23,5 +23,5 @@ var (
 		},
 	}
 
-	nextId int64 = 0
+	NextId int64 = 0
 )
