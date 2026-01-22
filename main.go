@@ -12,6 +12,7 @@ func main() {
 	mux.HandleFunc("GET /note", handlers.Get)
 	mux.HandleFunc("GET /note/{id}", handlers.GetById)
 	mux.HandleFunc("POST /note", handlers.Post)
+	mux.HandleFunc("PUT /note/{id}", handlers.Post)
 
 	log.Printf("server running on port :3000")
 	err := http.ListenAndServe(":3000", mux)
